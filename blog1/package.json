@@ -1,0 +1,19 @@
+{
+    "name": "blog1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bin/www.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "cross-env NODE_ENV=dev nodemon ./bin/www.js",
+        "prd": "cross-env pm2 start bin/www"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cross-env": "^6.0.3",
+        "mysql": "^2.17.1",
+        "redis": "^2.8.0"
+    }
+}
