@@ -1,7 +1,7 @@
 const mysql = require('mysql')
 const { MYSQL_CONF } = require('../conf/db')
 
-
+// 本地连接 线上环境使用连接池方法
 //创建链接
 const con = mysql.createConnection(MYSQL_CONF)
 
