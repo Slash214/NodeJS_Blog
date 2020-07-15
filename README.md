@@ -1,14 +1,20 @@
-# NodeJS_Blog
-使用原生NodeJS开发的博客系统后端。
+# NodeJS开发博客系统
+* 刚刚入门学习的Node，没有使用Koa2框架和express框架。开发的博客系统，完善了基本功能！
 
-功能实现了增，删，查，改
-登录功能: 登录检测验证
+## 功能实现
+* 博客列表的查询（keyword搜索）
+* 文章列表的增加
+* 文章列表的删除
+* 文章列表的修改
+* 登录用户的判断，是否为当前用户(密码加密。xss保护)
+* 使用了Redis和Session存储用户信息
+* 模板复用的封装
 
-使用了 Redis Session  cookie完成了登录判断
-封装了返回使用的成功与错误模板SuccessModal  ErrorModel
+## 使用方法
+- 下载先安装依赖： npm install
+- npm run dev  运行
+- 开发环境为 dev  线上环境为 prd
+- mysql链接好像未使用连接池，如果服务器运行需要改变一下。
 
-安装的模块：Nodemon  cross-env  mysql  redis
 
-链接数据库也进行封装并配置了环境参数
-开发环境为 dev  线上环境为 prd
 
